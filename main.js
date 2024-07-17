@@ -9,8 +9,6 @@ slides.forEach((img, index) => {
     img.addEventListener('click', function() {
         let imgClone = img.cloneNode(true);
         imgs.innerHTML = "";
-        prevBtn.style.display = "block";
-        nextBtn.style.display = "block";
         imgs.appendChild(imgClone);
         imgClone.style.opacity = 1;
         currentSlide = index;
